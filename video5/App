@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package video5;
+
+/**
+ *
+ * @author Eduard QF
+ */
+public class App {
+
+    public static void main(String[] args) {
+        PaisDaOlmpl dao = new PaisDaOlmpl();
+        for (Object obj : dao.getPaises()) {
+            System.out.println(((Paises) obj).getNombre());
+        }
+        System.out.println("+++++++++++++++++++++++++");
+        for (Object obj : dao.getPaises()) {
+            System.out.println(((Paises) obj).getNombre());
+        }
+
+        System.out.println("++++++++++++++++++++++++");
+
+        PaisDaOlmpl dao1 = new PaisDaOlmpl();
+        for (Object obj : dao1.getPaises()) {
+            System.out.println(((Paises) obj).getNombre());
+        }
+    }
+}
