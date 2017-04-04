@@ -14,5 +14,9 @@ public class Video1 {
         for (String param: args) {
             System.out.println("Parametro "+ param);
         }
+        if(args !=null){
+        System.out.println(args[0]);
+        System.out.println(args[args.length-1]);
+        }
     }
 }
