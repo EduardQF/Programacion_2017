@@ -13,7 +13,6 @@ public class Paises {
     private String nombre;
     
     public Paises(String nombre){
-        super();
         this.nombre=nombre;
     }
     public String getNombre(){
