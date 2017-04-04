@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class App {
     public static void main(String[] args) {
-        List <String>lista=new ArrayList<>();
+        /*List <String>lista=new ArrayList<>();
         lista.add("MitoCode");
         //lista.add(25);
         
@@ -22,10 +22,14 @@ public class App {
         
         String[] array=new String[5];
         array[0]="MitoCode";
-        array[1]="1";
+        array[1]="1";*/
         
         Generico <String,Integer,String,Double> c=new Generico<>("Eduardo",25,"Dani",25.0);
         c.mostrar();
-        
+        List<Generico<String,Integer,String,String>>lista = new ArrayList<>();
+        lista.add(new Generico<String,Integer,String,String> ("Eduardo",25,"Dani","Hello World"));
+        for (Generico<String,Integer,String,String> gn: lista) {
+                gn.mostrar();
+        }
     }
 }
